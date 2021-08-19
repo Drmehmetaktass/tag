@@ -83,5 +83,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
         
-print(">> Bot çalıyor merak etme kanka <<")
+print(">> Bot çalıyor merak etme 🚀 @loungesupport bilgi alabilirsin <<")
 client.run_until_disconnected()
