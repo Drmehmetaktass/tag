@@ -1,17 +1,17 @@
 {
-  "name": "Mention All Bot",
-  "description": "A simple mention all for telegram.",
+  "name": "Lounge All Bot",
+  "description": "Lounge tagger bot sıze ucretsız uyelerınızı etıketleyen bı bottur.",
   "env": {
     "TOKEN": {
-      "description": "Enter bot token.",
+      "description": "bot token girin.",
       "value": ""
     },
     "APP_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal.",
+      "description": "@otomytelegrambot dan api hash api id alınız.",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal.",
+      "description": "@otomytelegrambot dan api hash api id alınız.",
       "value": ""
     }
   },
