@@ -1,14 +1,15 @@
-# Mention All Bot
-_**This bot can mention members upto 10,000 in groups and can mention members upto 200 in channels !**_
+# Lounge All Bot
+_**Bu bot, gruplarda 10.000'e kadar üyeden bahsedebilir ve kanallarda 200'e kadar üyeden bahsedebilir. !**_
 
-### 🏷 Infomation
-- Language: Python.
-- Telegram Library: Telethon.
+### 🏷 Bilgi
+- Dil: Python.
+- Telgraf Kütüphanesi: Telethon.
+- yakında javascript surumu gelcektir
 
 ### 🚀 Deploy to heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AnjanaMadu/MentionAllBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bodrumlubebek/loungetagger)
 
-### 🎯 Credits and Other
-- [Me](https://github.com/AnjanaMadu) for this Project ;)
+### 🎯 Krediler ve Diğer
+- [Ben](https://github.com/bodrumlubebek) bu Proje için ;)
 
-**Do not forget to follow me on Github ✌️**
+**Beni Github'dan takip etmeyi unutmayın ✌️**
