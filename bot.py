@@ -70,6 +70,7 @@ async def mentionall(event):
     return await event.respond("__Bir mesajı yanıtlayın veya başkalarından bahsetmem için bana bir metin verin!__")
   
   if mode == "text_on_cmd":
+    anlik_calisan.append(event.chat_id)
     usrnum = 0
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
@@ -84,6 +85,7 @@ async def mentionall(event):
         usrtxt = ""
         
   if mode == "text_on_reply":
+    anlik_calisan.append(event.chat_id)
     usrnum = 0
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
