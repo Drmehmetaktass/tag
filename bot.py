@@ -32,7 +32,7 @@ def _start (event) :
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Beni Grubuna ekle 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=new")],
+                        "➕ Beni Grubuna ekle 🙋‍♀️", url=f"https://t.me/zkkzzkkz?startgroup=new")],
                 [
                     InlineKeyboardButton(
                         "📲 Güncelleme duyuru", url=f"https://t.me/turkcbot"), 
