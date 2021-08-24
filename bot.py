@@ -30,7 +30,7 @@ async def start(event):
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
                       
 
-Button.url('📣 Support', 'https://t.me/loungesupport'),
+Button.url('📣 Support', 'https://t.me/turkcbot'),
                       Button.url('🚀 Sahibim', 'https://t.me/drmehmetaktass')]
                     ),
                     link_preview=False
