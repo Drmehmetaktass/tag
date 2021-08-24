@@ -23,20 +23,29 @@ async def cancel(event):
   anlik_calisan.remove(event.chat_id)
 
 
-@client.on(events.NewMessage(pattern="^/start$"))
-async def start(event):
-  await event.reply("**TÜRK-C🇹🇷🇦🇿 Tagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
-                    buttons=(
-
-                      [
-                         InlineKeyboardButton.url(text='🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a')],
-
-
-                      InlineKeyboardButton(text='📣 Support', 'https://t.me/turkcbot:same'),
-                      InlineKeyboardButton(text='🚀 Sahibim', 'https://t.me/Drmehmetaktass:same')]
-                    ),
-                    link_preview=False
-                   )
+@Client.on_message(filters.private & filters.incoming & filters.command(['start']))
+def _start(client, message):
+    client.send_message(message.chat.id,
+        text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
+        parse_mode="markdown",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "➕ Beni Grubuna ekle 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=new")],
+                [
+                    InlineKeyboardButton(
+                        "📲 Güncelleme duyuru", url=f"https://t.me/turkcbot"), 
+                    InlineKeyboardButton(
+                        "💬 Support", url=f"https://t.me/turkcbot")
+                ],[
+                    InlineKeyboardButton(
+                        "🛠 GELİŞTİRİCİM 🛠", url=f"https://t.me/Drmehmetaktass")
+                ]
+            ]
+        ),
+        reply_to_message_id=message.message_id
+        )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
   helptext = "**Türk-c👨‍💻 tagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
