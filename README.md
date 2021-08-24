@@ -7,7 +7,7 @@ _**Bu bot, gruplarda 10.000'e kadar üyeden bahsedebilir ve kanallarda 200'e kad
 - yakında javascript surumu gelcektir
 
 ### 🚀 Deploy to heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bodrumlubebek/loungetagger)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Drmehmetaktass/tag)
 
 ### 🎯 Krediler ve Diğer
 - [Ben](https://github.com/bodrumlubebek) bu Proje için ;)
