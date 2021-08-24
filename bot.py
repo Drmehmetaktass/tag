@@ -26,7 +26,7 @@ async def cancel(event):
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply("**LoungeTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
-                    keyboard = [
+                    keyboard=[
         [  
             Button.inline("First option", b"1"), 
             Button.inline("Second option", b"2")
