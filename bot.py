@@ -27,7 +27,7 @@ async def cancel(event):
 async def start(event):
   await event.reply("**TÜRK-C🇹🇷🇦🇿 Tagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [InlineKeyboardButton(text='🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
+                      [InlineKeyboardButton.url(text='🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
                       InlineKeyboardButton(text='📣 Support', 'https://t.me/turkcbot:same'),
                       InlineKeyboardButton(text='🚀 Sahibim', 'https://t.me/Drmehmetaktass:same')]
                     ),
