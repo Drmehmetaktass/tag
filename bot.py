@@ -24,15 +24,28 @@ async def cancel(event):
 
 
 @client.on(events.NewMessage(pattern="^/start$"))
-async def start(event):
-  await event.reply("**LoungeTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
-                    buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/loungesupport'),
-                      Button.url('🚀 Sahibim', 'https://t.me/bodrumlubebekk')]
-                    ),
-                    link_preview=False
-                   )
+def _start(client, message):
+    client.send_message(message.chat.id,
+        text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
+        parse_mode="markdown",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "➕ Beni Grubuna ekle 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=new")],
+                [
+                    InlineKeyboardButton(
+                        "📲 Güncelleme duyuru", url=f"https://t.me/turkcbot"), 
+                    InlineKeyboardButton(
+                        "💬 Support", url=f"https://t.me/turkcbot")
+                ],[
+                    InlineKeyboardButton(
+                        "🛠 GELİŞTİRİCİM 🛠", url=f"https://t.me/Drmehmetaktass")
+                ]
+            ]
+        ),
+        reply_to_message_id=message.message_id
+        )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
   helptext = "**Loungetagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
