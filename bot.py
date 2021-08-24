@@ -40,7 +40,7 @@ async def start(event):
         ]
     ]
                     ),
-                    link_preview=False
+                    link_preview=true
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
