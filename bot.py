@@ -28,7 +28,9 @@ async def start(event):
   await event.reply("**LoungeTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/loungesupport'),
+                      
+
+Button.url('📣 Support', 'https://t.me/loungesupport'),
                       Button.url('🚀 Sahibim', 'https://t.me/bodrumlubebekk')]
                     ),
                     link_preview=False
@@ -39,7 +41,8 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/loungesupport'),
+                      
+                      Button.url('📣 Support', 'https://t.me/loungesupport'),
                       Button.url('🚀 Sahibim', 'https://t.me/bodrumlubebekk')]
                     ),
                     link_preview=False
