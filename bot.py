@@ -27,9 +27,9 @@ async def cancel(event):
 async def start(event):
   await event.reply("**TÜRK-C🇹🇷🇦🇿 Tagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/turkcbot:same'),
-                      Button.url('🚀 Sahibim', 'https://t.me/Drmehmetaktass:same')]
+                      [InlineKeyboardButton(text='🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
+                      InlineKeyboardButton(text='📣 Support', 'https://t.me/turkcbot:same'),
+                      InlineKeyboardButton(text='🚀 Sahibim', 'https://t.me/Drmehmetaktass:same')]
                     ),
                     link_preview=False
                    )
@@ -38,9 +38,9 @@ async def help(event):
   helptext = "**Türk-c👨‍💻 tagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/turkcbot:same'),
-                      Button.url('🚀 Sahibim', 'https://t.me/Drmehmetaktass:same')]
+                      [InlineKeyboardButton(text='🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
+                       InlineKeyboardButton(text='📣 Support', 'https://t.me/turkcbot:same'),
+                      InlineKeyboardButton(text='🚀 Sahibim', 'https://t.me/Drmehmetaktass:same')]
                     ),
                     link_preview=False
                    )
