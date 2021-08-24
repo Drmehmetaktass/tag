@@ -24,7 +24,7 @@ async def cancel(event):
 
 
 @client.on(events.NewMessage(pattern="^/start$"))
-def _start(client, message):
+def _start :
     client.send_message(message.chat.id,
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
         parse_mode="markdown",
