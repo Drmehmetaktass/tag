@@ -1,6 +1,6 @@
 {
-  "name": "Lounge Tagger Bot",
-  "logo":"https://telegra.ph/file/dfa517fd00b6aca5f7ac9.jpg",
+  "name": "TÜRK-C Tagger Bot",
+  "logo":"https://telegra.ph/file/50c0103e4548eaae95e4d.jpg",
   "description": "Lounge tagger bot sıze ucretsız uyelerınızı etıketleyen bı bottur.",
   "env": {
     "TOKEN": {
@@ -8,7 +8,7 @@
       "value": ""
     },
     "APP_ID": {
-      "description": "@otomytelegrambot dan api hash api id alınız.",
+      "description": "@otomytelegrambot dan api hash api id alınız. @turkcbot'a katıl sorunsuz çalışsın",
       "value": ""
     },
     "API_HASH": {
