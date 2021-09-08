@@ -27,11 +27,11 @@ async def cancel(event):
 async def start(event):
   await event.reply("**TÜRK-C TAGGERBOT**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
+                      [Button.url(' Beni Bir Gruba al🦕', 'https://t.me/turkctagbot?startgroup=a'),
                       
 
 Button.url('📣 Support', 'https://t.me/turkcbot'),
-                      Button.url('🚀 Sahibim', 'https://t.me/drmehmetaktass')]
+                      Button.url('🐊 Sahibim', 'https://t.me/drmehmetaktass')]
                     ),
                     link_preview=False
                    )
@@ -40,10 +40,10 @@ async def help(event):
   helptext = "**turkctagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek\n\n*TAG YAPMAYI DURDURMAK İSTİYORSANIZ /cancel yazın*"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
+                      [Button.url('🌿 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
                       
-                      Button.url('📣 Support', 'https://t.me/turkcbot'),
-                      Button.url('🚀 Sahibim', 'https://t.me/drmehmetaktass')]
+                      Button.url('💞 Support', 'https://t.me/turkcbot'),
+                      Button.url('🌵 Sahibim', 'https://t.me/drmehmetaktass')]
                     ),
                     link_preview=False
                    )
