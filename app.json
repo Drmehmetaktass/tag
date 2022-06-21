@@ -1,10 +1,10 @@
 {
   "name": "TÜRK-C Tagger Bot",
   "logo":"https://telegra.ph/file/50c0103e4548eaae95e4d.jpg",
-  "description": "Lounge tagger bot sıze ucretsız uyelerınızı etıketleyen bı bottur.",
+  "description": "TÜRK-C TAG bot sıze ucretsız uyelerınızı etıketleyen bı bottur.",
   "env": {
     "TOKEN": {
-      "description": "bot token girin.",
+      "description": "bot token girin YOUTUBE KANALIMDA KURULUMU VAR .",
       "value": ""
     },
     "APP_ID": {
