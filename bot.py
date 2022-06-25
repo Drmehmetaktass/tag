@@ -48,11 +48,7 @@ async def mentionall(event):
   if event.is_private:
     return await event.respond("__Bu komut gruplarda ve kanallarda kullanılabilir.!__")
   
-@client.on(events.NewMessage(pattern="^/atag ?(.*)"))
-async def mentionalladmin(event):
-  global anlik_calisan
-  if event.is_private:
-    return await event.respond("**Bu Komut Yalnızca Grublarda Ve Kanallarda Kullanıma Bilir!**")
+
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
@@ -89,6 +85,7 @@ async def mentionalladmin(event):
         usrnum = 0
         usrtxt = ""
         
+
   
   if mode == "text_on_reply":
     anlik_calisan.append(event.chat_id)
@@ -106,7 +103,11 @@ async def mentionalladmin(event):
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""
-
+@client.on(events.NewMessage(pattern="^/atag ?(.*)"))
+async def mentionalladmin(event):
+  global anlik_calisan
+  if event.is_private:
+    return await event.respond("**Bu Komut Yalnızca Grublarda Ve Kanallarda Kullanıma Bilir!**")
 
 print(">> Bot çalıyor merak etme 🚀 @turkcbot bilgi alabilirsin <<")
 client.run_until_disconnected()
