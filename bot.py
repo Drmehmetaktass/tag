@@ -24,26 +24,19 @@ async def cancel(event):
 
 
 @client.on(events.NewMessage(pattern="^/start$"))
-async def start(event):
-  await event.reply("**TÜRK-C TAGGERBOT**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
-                    buttons=(
-                      [Button.url(' Beni Bir Gruba al🦕', 'https://t.me/turkctagbot?startgroup=a'),
-                      
-
-Button.url('📣 Support', 'https://t.me/turkcbot'),
-                      Button.url('🐊 Sahibim', 'https://t.me/drmehmetaktass')]
-                    ),
-                    link_preview=False
-                   )
-@client.on(events.NewMessage(pattern="^/help$"))
-async def help(event):
-  helptext = "**turkctagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek\n\n*TAG YAPMAYI DURDURMAK İSTİYORSANIZ /cancel yazın*"
-  await event.reply(helptext,
-                    buttons=(
-                      [Button.url('🌿 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
-                      
-                      Button.url('💞 Support', 'https://t.me/turkcbot'),
-                      Button.url('🌵 Sahibim', 'https://t.me/drmehmetaktass')]
+async def info(event):
+  await event.reply("\n🌹HOŞGELDİNİZ🌹        \n⚔️𝙓𝙚𝙣𝙖⚔️\nAnka Etiket Botunu tercih ettiğiniz için teşekkür ederiz.\n**KOMUTLAR**\n/all herkesi etiketler\n/atag sadece admin\n/cancel botu durdurur\n\n𝚂𝙰𝙷İ𝙱İ𝙼:@Joaquin010\n\n𝙱𝙾𝚃 𝙶𝙴𝙻İŞ𝚃İ𝚁İ𝙲İ𝚂İ:@drmehmetaktass",
+                     buttons=(
+                      [
+                       Button.url('BENİ GRUBA EKLE➕', 'https://t.me/Aofanka_bot?startgroup=a')
+                      ],
+                      [
+                       Button.url('📢 KANAL', 'https://t.me/Ankasiyasetvekamu'),
+                       Button.url('🇹🇷 SAHİBİM', 'https://t.me/Joaquin010')
+                      ],
+                      [
+                       Button.url('🧑🏻‍💻 𝙳𝙰𝙷𝙰 𝙵𝙰𝚉𝙻𝙰 𝙱𝙾𝚃 🧑🏻‍💻', 'https://t.me/turkcbot')
+                      ],
                     ),
                     link_preview=False
                    )
