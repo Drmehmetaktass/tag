@@ -85,6 +85,11 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
         
+@client.on(events.NewMessage(pattern="^/atag ?(.*)"))
+async def mentionalladmin(event):
+  global anlik_calisan
+  if event.is_private:
+    return await event.respond("**Bu Komut Yalnızca Grublarda Ve Kanallarda Kullanıma Bilir!**")
 
   
   if mode == "text_on_reply":
@@ -103,11 +108,6 @@ async def mentionall(event):
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""
-@client.on(events.NewMessage(pattern="^/atag ?(.*)"))
-async def mentionalladmin(event):
-  global anlik_calisan
-  if event.is_private:
-    return await event.respond("**Bu Komut Yalnızca Grublarda Ve Kanallarda Kullanıma Bilir!**")
 
 print(">> Bot çalıyor merak etme 🚀 @turkcbot bilgi alabilirsin <<")
 client.run_until_disconnected()
