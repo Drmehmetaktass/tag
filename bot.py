@@ -27,8 +27,8 @@ async def cancel(event):
 async def start(event):
   await event.reply("**Call Tone Tagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/calltonebot?startgroup=a'),
-                      Button.url('📣 Geliştirici', 'https://t.me/iaylak')]
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
+                      Button.url('📣 Geliştirici', 'https://t.me/turkcbot')]
                     ),
                     link_preview=False
                    )
@@ -37,8 +37,8 @@ async def help(event):
   helptext = "**Call Tone Bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n\n`Örnek: /all Günaydın!`  \n\nBu komutu yanıt olarak kullanabilirsiniz. Herhangi bir mesaj yanıtlandığında, yanıtlanan mesaj ile kullanıcıları etiketleyecebilir."
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/calltonebot?startgroup=a'),
-                      Button.url('📣 Geliştirici', 'https://t.me/iaylak')]
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
+                      Button.url('📣 Geliştirici', 'https://t.me/turkcbot')]
                     ),
                     link_preview=False
                    )
@@ -80,6 +80,6 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot çalıyor merak etme 🚀 @iaylak bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @drmehmetaktass bilgi alabilirsin <<")
 client.run_until_disconnected()
  
