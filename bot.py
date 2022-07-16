@@ -25,7 +25,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Call Tone Tagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
+  await event.reply("**Ben Tagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/turkctagbot?startgroup=a'),
                       Button.url('📣 Geliştirici', 'https://t.me/turkcbot')]
