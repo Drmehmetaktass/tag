@@ -16,7 +16,7 @@ bot_token = os.environ.get("TOKEN")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
-
+#drmehmetaktass
 @client.on(events.NewMessage(pattern='^(?i)/cancel'))
 async def cancel(event):
   global anlik_calisan
