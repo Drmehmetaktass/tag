@@ -12,4 +12,4 @@ _**Bu bot, gruplarda 10.000'e kadar üyeden bahsedebilir ve kanallarda 200'e kad
 ### 🎯 Krediler ve Diğer YILDIZ VERMEYİ UNUTMA
 - [teşekkür](https://Instagram/dr.mehmetaktass/) TEŞEKKÜR ;)
 - [BEN](https://github.com/drmehmetaktass) BU PROJE İÇİN
-**Beni Github'dan takip etmeyi unutmayın ✌️**
+**Beni Github'dan takip etmeyi unutayın ✌️**
